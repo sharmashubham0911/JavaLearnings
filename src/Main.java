@@ -1,3 +1,8 @@
+import Collection.ComparatorAndComparable.Car;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -5,21 +10,19 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        int arr[] = {12, 3, 6, 1, 6, 9};
-        int target = 24;
+        Car car1  = new Car("SUV", "Petrol");
+        Car car2 = new Car("Sedan", "Diesel");
+        Car car3 = new Car("HetchBack", "CNG");
 
-        System.out.println("called the getTriplate method");
+        List<Car> carList = new ArrayList<>();
+        carList.add((car1));
+        carList.add((car2));
+        carList.add((car3));
 
-        List<List<Integer>> res = Interview.getTriplateSum(arr, target);
+        Collections.sort(carList);
 
-        System.out.println("all triplates are");
-
-        for (int i = 0; i < res.size(); i ++){
-            List<Integer> smallRes = res.get(i);
-            for (int el: smallRes){
-                System.out.print(el + " ");
-            }
-            System.out.println();
+        for (Car car: carList){
+            System.out.println(car.getCarType());
         }
 
     }
