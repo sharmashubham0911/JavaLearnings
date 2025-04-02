@@ -18,6 +18,7 @@ This repository contains a collection of Java Streams interview questions, desig
 12. **How to flatten a stream of collections?**
 13. **Explain the differences between `findFirst()`, `findAny()`, and `anyMatch()` operations.**
 14. **Explain the `Collectors` class.**
+15. **Explain the difference between filter and map.**
 
 ## Hard Interview Questions (External Resource)
 
